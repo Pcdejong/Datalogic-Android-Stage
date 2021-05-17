@@ -66,6 +66,9 @@ If you have a seperate Visual Formatter file it will be automaticly copied and i
 # Velocity config files:
 Velocity config files that are found in the root (or config folder) will be automaticly copied to the right folder of the device.
 
+# Surelock/Surefox settings file:
+Automatic copy and import of Surelock and Surefox Settings file into the device.
+
 # Scan2Deploy Studio files
 With Scan2Deploy Studio 1.5 it is now possible to store files locally on your device. With this file you can now
 copy and install these projects over usb. For instance in pre-sales projects where a Scan2Deploy studio server is
