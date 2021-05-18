@@ -11,7 +11,7 @@ Disclaimer: This file is an un-official tool and is not officially supported by 
 The purpose of this file is to easily stage Datalogic terminals with firmware/configuration/apk's etc with an usb cable.
 
 # Requirements:
-Turn on USB debugging on your device. You can use Scan2Deploy (from Google home screen) for this using attached pdf or do this manually.
+Turn on USB debugging on your device. You can use Scan2Deploy (from Google home screen) for this using enclosed pdf or do this manually.
 
 # Warning:
 Please be aware that this script will remove all spaces in your config and apk files! This is needed for a correct installation.
@@ -152,4 +152,4 @@ If you have wishes for new enhancements also do not hesitate to contact me.
     Version 4.1 Implementation of deploying local Scan2Deploy files
     Version 4.2 Fix for offline devices (ADB).
     Version 4.3 Implement direct import of Surelock and Surefox settings files (instead of autoimport)
-    Version 4.4 Implement possibility to set fixed ip adresses with the DLintentSDK
+    Version 4.4 Implement possibility to set fixed ip adresses with the DLintentSDK + Fix for autoreboot
