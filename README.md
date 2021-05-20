@@ -76,7 +76,7 @@ not yet installed. If a tar file is found it will be automaticly copied. A paylo
 Choose the Copy Data > Copy encrypted Data. This data will be stored in a text file with the same name as the tar file
 If you re-create the tar file make sure you delete the text file or renew the data with the payload from Scan2Deploy Studio.
 
-# Fixed ip adress:
+# Fixed ip adress (4.4)
 With this function it is possible to configure a fixed ip-address (beta function)
 You need to install DLintents apk first to use this function. Please contact support if you don't have this application.
 Fixedip.txt is needed in the config folder (if exists) or in the same folder as the stage file. The file has to contain:
@@ -92,6 +92,15 @@ You can either preconfigure your fixed ip-adresses on serialnumber like this.
     G20L44748=10.0.0.223
 If the serialnumber is not known the batch file will prompt you for the serialnumber. It also saves the serialnumber and ipadress to the fixedip.txt file 
 so the second time you use this file with the same terminal you don't have to enter the serialnumber again.
+
+# Espresso packages (4.5)
+If you want to install Espresso packages please create a folder called Espresso and put the espresso firmware in there. Please be aware that no check on compatibility is performed on this file so make sure you put a correct espresso package in there. 
+
+Since it is not possible (yet?) to see which Espresso package is installed on the device a logfile named espresso.txt is created to log the serialnumbers that already have been processed. 
+
+# Debug mode (4.6)
+If you want to debug the batch file in case of problems. Alter the batch file setting set Debug=FALSE to set Debug=TRUE
+A log file with the serialnumber of your device is created with the output of the batch file. Please be aware that if you set the debug mode to true the output is not longer shown in the batch file itself and the multiple devices function will no longer work (only on the first device)
 
 # Optional things:
 Sometimes you have additional wishes. Below you can find three examples if for example you want to copy some files also to the device.
@@ -153,3 +162,5 @@ If you have wishes for new enhancements also do not hesitate to contact me.
     Version 4.2 Fix for offline devices (ADB).
     Version 4.3 Implement direct import of Surelock and Surefox settings files (instead of autoimport)
     Version 4.4 Implement possibility to set fixed ip adresses with the DLintentSDK + Fix for autoreboot
+    Version 4.5 Build in support for Espresso packages
+    Version 4.6 Created a debug mode for troubleshooting purposes
