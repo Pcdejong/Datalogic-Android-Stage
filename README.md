@@ -10,13 +10,13 @@ Disclaimer: This file is an un-official tool and is not officially supported by 
 
 The purpose of this file is to easily stage Datalogic terminals with firmware/configuration/apk's etc with an usb cable.
 
-# Requirements:
+# Requirements
 Turn on USB debugging on your device. You can use Scan2Deploy (from Google home screen) for this using enclosed pdf or do this manually.
 
-# Warning:
+# Warning
 Please be aware that this script will remove all spaces in your config and apk files! This is needed for a correct installation.
 
-# Firmware update:
+# Firmware update (1.0)
 To update the firmware off your device simply place the zip file in the same folder as the bat file and run the bat file.
 The device will perform a check if the firmware is the same as on the device. If the firmware is the same the update will not proceed.
 By default the file will perform a factory reset after the update. If you don't want to reset change the RESET parameter inside the bat file to FALSE
@@ -25,7 +25,7 @@ A check is build in to see if the battery is charged sufficiently to perform the
 
 When a firmware update is performed the process is started. You have to run the file again for addional configuration.
 
-# Fixed firmware folder:
+# Fixed firmware folder (3.9)
 With setting this parameter to TRUE:
 		set usefixedfwfolder=FALSE
 	You can set a fixed folder where you can put all your Datalogic firmware in one folder. 
@@ -35,46 +35,45 @@ With setting this parameter to TRUE:
 	When multiple firmware are found for the same terminal the batch file will select the firmware with the highest version number.
 	
 
-# DXU Config files:
+# DXU Config files (1.0)
 You can also add a dxu configuration file in the folder. This will be applied to the device.
 
-
-# Apk files:
+# Apk files (1.0)
 To install your application(s) you can add one or multiple apk files in the folder.
 
-# Multiple Devices:
+# Multiple Devices (1.8)
 You can stage/firmware update multiple devices at once. Just connect more than 1 device with your pc with usb debugging on. Great for speedy firmware updates!
 
-# Log file:
+# Log file (2.0)
 By default the logging function is enabled. This will create a log file with date/time and serialnumber and the process are performed.
 To disable the log file change the LOG parameter inside the bat file to FALSE
 
-# Autocopy files:
+# Autocopy files (2.7)
 With the "set autocopy=*.jpg;*.jpeg;*.bmp" parameter the file copies every file with this extension to the sdcard of the terminal.
 You can change the parameter offcourse to copy your file to the sdcard if you want.
 
-# Folders:
+# Folders (3.3)
 Optional you can use the Firmware, Config and APK folder to store your files instead of putting everything in the root. 
 The config files can be used for dxu config files but also for Visual formatter, Scan2Deploy, proconfig files etc.
 
-# Handscanner:
+# Handscanner (3.1)
 If you have handscanner files (*.proconfig) in your root (or config folder) they will be automaticly copied and installed. Make sure you install the Insights application
 
-# Visual Formatter:
+# Visual Formatter (3.2)
 If you have a seperate Visual Formatter file it will be automaticly copied and installed. Excellent way of testing your VF projects!
 
-# Velocity config files:
+# Velocity config files (3.4)
 Velocity config files that are found in the root (or config folder) will be automaticly copied to the right folder of the device.
 
-# Surelock/Surefox settings file:
-Automatic copy and import of Surelock and Surefox Settings file into the device.
-
-# Scan2Deploy Studio files
+# Scan2Deploy Studio files (4.1)
 With Scan2Deploy Studio 1.5 it is now possible to store files locally on your device. With this file you can now
 copy and install these projects over usb. For instance in pre-sales projects where a Scan2Deploy studio server is
 not yet installed. If a tar file is found it will be automaticly copied. A payload will be asked to enter. 
 Choose the Copy Data > Copy encrypted Data. This data will be stored in a text file with the same name as the tar file
 If you re-create the tar file make sure you delete the text file or renew the data with the payload from Scan2Deploy Studio.
+
+# Surelock/Surefox settings file (4.3)
+Automatic copy and import of Surelock and Surefox Settings file into the device.
 
 # Fixed ip adress (4.4)
 With this function it is possible to configure a fixed ip-address (beta function)
@@ -102,7 +101,7 @@ Since it is not possible (yet?) to see which Espresso package is installed on th
 If you want to debug the batch file in case of problems. Alter the batch file setting set Debug=FALSE to set Debug=TRUE
 A log file with the serialnumber of your device is created with the output of the batch file. Please be aware that if you set the debug mode to true the output is not longer shown in the batch file itself and the multiple devices function will no longer work (only on the first device)
 
-# Optional things:
+# Optional things
 Sometimes you have additional wishes. Below you can find three examples if for example you want to copy some files also to the device.
 You can copy these examples just above the :exit part in the bat file
 
@@ -120,7 +119,7 @@ You can copy these examples just above the :exit part in the bat file
     adb -s %device% logcat -G 16M
     adb -s %device% logcat -g
 
-# Bugs and enhanchements:
+# Bugs and enhanchements
 If you encounter bugs or something is not working. Just send me an email: peter.dejong@datalogic.com 
 If you have wishes for new enhancements also do not hesitate to contact me.
 	
