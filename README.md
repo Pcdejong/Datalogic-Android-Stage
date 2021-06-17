@@ -163,3 +163,4 @@ If you have wishes for new enhancements also do not hesitate to contact me.
     Version 4.4 Implement possibility to set fixed ip adresses with the DLintentSDK + Fix for autoreboot
     Version 4.5 Build in support for Espresso packages
     Version 4.6 Created a debug mode for troubleshooting purposes
+    Version 4.7 Fixed Surefox import. Fixed Memor K firmware update.
