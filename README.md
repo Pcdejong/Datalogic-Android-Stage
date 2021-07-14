@@ -11,10 +11,10 @@ Disclaimer: This file is an un-official tool and is not officially supported by 
 The purpose of this file is to easily stage Datalogic terminals with firmware/configuration/apk's etc with an usb cable.
 
 # Requirements
-Turn on USB debugging on your device. You can use Scan2Deploy (from Google home screen) for this using enclosed pdf or do this manually.
+Turn on USB debugging on your device. You can use Scan2Deploy (from Google home screen) for this using the enclosed pdf or do this manually.
 
 # Warning
-Please be aware that this script will remove all spaces in your config and apk files! This is needed for a correct installation.
+Please be aware that this script will remove all spaces in your config and apk files! This is needed for a correct installation. (no longer applies on version 4.9 or higher)
 
 # Firmware update (1.0)
 To update the firmware off your device simply place the zip file in the same folder as the bat file and run the bat file.
@@ -65,6 +65,9 @@ If you have a seperate Visual Formatter file it will be automaticly copied and i
 # Velocity config files (3.4)
 Velocity config files that are found in the root (or config folder) will be automaticly copied to the right folder of the device.
 
+# Xtralogic config files (3.4)
+Xtralogic config file (xtralogic-config.xml) that is found in the root (or config folder) will be automaticly copied to the right folder of the device. For more info and an example file see the MDM section in the documenation: https://www.xtralogic.com/remote-desktop-client-documentation/
+
 # Scan2Deploy Studio files (4.1)
 With Scan2Deploy Studio 1.5 it is now possible to store files locally on your device. With this file you can now
 copy and install these projects over usb. For instance in pre-sales projects where a Scan2Deploy studio server is
@@ -73,7 +76,7 @@ Choose the Copy Data > Copy encrypted Data. This data will be stored in a text f
 If you re-create the tar file make sure you delete the text file or renew the data with the payload from Scan2Deploy Studio.
 
 # Surelock/Surefox settings file (4.3)
-Automatic copy and import of Surelock and Surefox Settings file into the device.
+Automatic copy and import of Surelock and Surefox Settings file into the device. (Removed in 4.9 and reverted to the autoimport function)
 
 # Fixed ip adress (4.4)
 With this function it is possible to configure a fixed ip-address (beta function)
@@ -164,3 +167,5 @@ If you have wishes for new enhancements also do not hesitate to contact me.
     Version 4.5 Build in support for Espresso packages
     Version 4.6 Created a debug mode for troubleshooting purposes
     Version 4.7 Fixed Surefox import. Fixed Memor K firmware update.
+    Version 4.8 Removed renaming of spaces in dxu/apk and firmware files
+    Version 4.9 Added Xtralogic support (RDP application) and introduced SkorpioX5 sideload method. Removed direct import for Surelock and Surefox settings (4.3)
