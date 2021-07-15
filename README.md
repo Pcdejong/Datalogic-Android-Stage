@@ -1,3 +1,6 @@
+
+To receive a notification on new releases, click on Watch > Releases only on the top.
+
 # Datalogic-Android-Stage
 Batch file to Stage a Datalogic Android terminal over USB Debugging connection.
 
