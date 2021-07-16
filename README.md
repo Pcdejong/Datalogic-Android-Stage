@@ -66,7 +66,7 @@ If you have handscanner files (*.proconfig) in your root (or config folder) they
 # Visual Formatter (3.2)
 If you have a seperate Visual Formatter file it will be automaticly copied and installed. Excellent way of testing your VF projects!
 
-# Velocity config files (3.4)
+# Velocity config files (4.9)
 Velocity config files that are found in the root (or config folder) will be automaticly copied to the right folder of the device.
 
 # Xtralogic config files (3.4)
