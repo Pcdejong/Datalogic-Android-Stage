@@ -72,6 +72,9 @@ Velocity config files that are found in the root (or config folder) will be auto
 # Xtralogic config files (4.9)
 Xtralogic config file (xtralogic-config.xml) that is found in the root (or config folder) will be automaticly copied to the right folder of the device. For more info and an example file see the MDM section in the documenation: https://www.xtralogic.com/remote-desktop-client-documentation/
 
+# Glink config files (5.0)
+Glink config file (config.glinki) that is found in the root (or config folder) will be automaticly copied to the right folder of the device. Since there are VT, 5250 and 3270 versions the file will search which version is installed and copy to the correct version (If multiple versions are installed this will problably not work)
+
 # Scan2Deploy Studio files (4.1)
 With Scan2Deploy Studio 1.5 it is now possible to store files locally on your device. With this file you can now
 copy and install these projects over usb. For instance in pre-sales projects where a Scan2Deploy studio server is
@@ -81,6 +84,9 @@ If you re-create the tar file make sure you delete the text file or renew the da
 
 # Surelock/Surefox settings file (4.3)
 Automatic copy and import of Surelock and Surefox Settings file into the device. (Removed in 4.9 and reverted to the autoimport function)
+
+# Surelock autostart (5.0)
+When you change the "SurelockRun" parameter to TRUE Surelock will be automaticly started at the end.
 
 # Fixed ip adress (4.4)
 With this function it is possible to configure a fixed ip-address (beta function)
@@ -173,3 +179,4 @@ If you have wishes for new enhancements also do not hesitate to contact me.
     Version 4.7 Fixed Surefox import. Fixed Memor K firmware update.
     Version 4.8 Removed renaming of spaces in dxu/apk and firmware files
     Version 4.9 Added Xtralogic support (RDP application) and introduced SkorpioX5 sideload method. Removed direct import for Surelock and Surefox settings (4.3)
+    Version 5.0 Added SurelockRun parameter to easily start Surelock. Added Glink support to copy config.glinki config files to the correct import directory (https://www.gar.no/products/glink-for-android)
