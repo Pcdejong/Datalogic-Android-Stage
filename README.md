@@ -92,7 +92,7 @@ When you change the "SurelockRun" parameter to TRUE Surelock will be automaticly
 Added SSID and WPA2key parameters to setup a wifi network.
 
 # Reboot option (5.2)
-Added Reboot option to auto reboot the terminal at the end of a file. (please be aware with firmware updates)
+Added Reboot option to auto reboot the terminal at the end of a file. 
 A reboottimeout is set to 10 seconds by default. If SurelockRun is set to true this parameter will be auto set to 30 to give Surelock time to start first.
 
 # Fixed ip adress (4.4)
