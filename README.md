@@ -88,6 +88,13 @@ Automatic copy and import of Surelock and Surefox Settings file into the device.
 # Surelock autostart (5.0)
 When you change the "SurelockRun" parameter to TRUE Surelock will be automaticly started at the end.
 
+# Wifi network (5.2)
+Added SSID and WPA2key parameters to setup a wifi network.
+
+# Reboot option (5.2)
+Added Reboot option to auto reboot the terminal at the end of a file. (please be aware with firmware updates)
+A reboottimeout is set to 10 seconds by default. If SurelockRun is set to true this parameter will be auto set to 30 to give Surelock time to start first.
+
 # Fixed ip adress (4.4)
 With this function it is possible to configure a fixed ip-address (beta function)
 You need to install DLintents apk first to use this function. Please contact support if you don't have this application.
@@ -180,3 +187,5 @@ If you have wishes for new enhancements also do not hesitate to contact me.
     Version 4.8 Removed renaming of spaces in dxu/apk and firmware files
     Version 4.9 Added Xtralogic support (RDP application) and introduced SkorpioX5 sideload method. Removed direct import for Surelock and Surefox settings (4.3)
     Version 5.0 Added SurelockRun parameter to easily start Surelock. Added Glink support to copy config.glinki config files to the correct import directory (https://www.gar.no/products/glink-for-android)
+    Version 5.1 Bugfix on Espresso firmware installations.
+    Version 5.2 Added support for Wifi configuring WPA2 networks. Added support for autoreboot a terminal. 
