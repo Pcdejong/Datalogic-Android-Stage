@@ -189,3 +189,4 @@ If you have wishes for new enhancements also do not hesitate to contact me.
     Version 5.0 Added SurelockRun parameter to easily start Surelock. Added Glink support to copy config.glinki config files to the correct import directory (https://www.gar.no/products/glink-for-android)
     Version 5.1 Bugfix on Espresso firmware installations.
     Version 5.2 Added support for Wifi configuring WPA2 networks. Added support for autoreboot a terminal. 
+    Version 5.3 Bugfix on Glink config files. Added Espresso folder to the zip file.
