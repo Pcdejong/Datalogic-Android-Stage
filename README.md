@@ -139,7 +139,7 @@ You can copy these examples just above the :exit part in the bat file
     adb -s %device% logcat -G 16M
     adb -s %device% logcat -g
 
-# Bugs and enhanchements
+# Bugs and enhancements
 If you encounter bugs or something is not working. Just send me an email: peter.dejong@datalogic.com 
 If you have wishes for new enhancements also do not hesitate to contact me.
 	
